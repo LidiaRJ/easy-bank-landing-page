@@ -30,8 +30,13 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-[![Desktop_version](https://github.com/LidiaRJ/insure-landing-page/blob/main/screenshots/insure-landing-page-desktop.jpg)](https://github.com/LidiaRJ/insure-landing-page/blob/main/screenshots/insure-landing-page-desktop.jpg)
-[![Mobile_version](https://github.com/LidiaRJ/insure-landing-page/blob/main/screenshots/insure-landing-page-mobile.jpg)](https://github.com/LidiaRJ/insure-landing-page/blob/main/screenshots/insure-landing-page-mobile.jpg)
+[![Desktop_version](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/desktop.jpg)](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/desktop.jpg)
+
+[![Desktop_version_active](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/desktop%20active%20.png)](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/desktop%20active%20.png)
+
+[![Mobile_version](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/mobile.jpg)](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/mobile.jpg)
+
+[![Mobile_version_hamburger](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/mobile%20hamburger.jpg)](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/mobile%20hamburger.jpg)
 
 ### Links
 
