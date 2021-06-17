@@ -1,0 +1,95 @@
+.articles {
+    background-color: $veryLightGray; 
+    
+}
+
+.article {
+
+    &__content {
+
+        padding-top: 5.625rem;
+        padding-bottom: 5.625rem;
+
+        @include breakpoint-up(medium) {
+            padding-right: $paddingMedium;
+            padding-left: $paddingMedium;
+        }
+
+        @include breakpoint-up(large) {
+            padding: 6.25rem $paddingSide;   
+        }
+
+        h2 {
+            text-align: center;
+
+            @include breakpoint-up(medium) {
+                text-align: left;
+            }
+        }
+    }
+
+    &__gallery {
+        display: grid; //Needs to set up the template
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+        //grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); - To avoid using media queries
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(2, 1fr );
+        }
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        box-shadow: 1px 5px 15px $grayishBlue;
+        transition: all 200ms ease-in-out; 
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__image {
+        height: 12.5rem;
+        width: 100%;
+        
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: $borders-box;
+            border-top-right-radius: $borders-box;
+        }
+    }
+
+    &__copy {
+        background-color: white;
+        padding: 2rem;
+        border-bottom-left-radius: $borders-box;
+        border-bottom-right-radius: $borders-box;
+
+
+        @include breakpoint-up(medium) {
+            padding: 2.1875rem;
+        }
+
+        h4:hover {
+            color: $limeGreen;
+        }
+
+        p {
+            font-size: 0.75rem;
+            line-height: 1.0625rem;
+            color: $grayishBlue;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        
+
+        
+    }
+}

@@ -1,0 +1,109 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: $veryLightGray;
+
+    @include breakpoint-up(large) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__image {
+        position: relative;
+        min-height: 17.5rem;
+        
+        @include breakpoint-up (medium) {
+            min-height: 25rem;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 3;
+            order: 2;
+            height: 40.9375rem;
+            width: 100%;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url(./../../images/bg-intro-mobile.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            height: 100%;
+            width: 100%;
+
+            @include breakpoint-up (medium) {
+                background-size: cover;
+                background-position: center center;
+            }
+
+            @include breakpoint-up(large) {
+                width: 100%;
+                height: 100%;
+                background-image: url(./../../images/bg-intro-desktop.svg);
+                background-size: 180% 180%;
+                background-repeat: no-repeat;
+                background-position: 13% 53%;
+                
+            }
+        }
+     
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: url(./../../images/image-mockups.png);
+            background-size: 93%;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+
+            @include breakpoint-up (medium) {
+                background-size: 60%;
+                background-position: center bottom;
+            }
+
+            @include breakpoint-up(large) {
+                width: 100%;
+                height: 122%;
+                background-size: 94%;
+                //background-position: 10rem -110px;
+                background-position: 150px 110%;
+                
+            }
+        }
+    }
+
+    &__copy {
+        text-align: center;
+        padding-top: 0;
+        padding-right: 30px;
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 1;
+            padding-left: $paddingSide;
+            text-align: left;
+            margin-right: 40px;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large) {
+                font-size: 3.25rem;
+            }
+        }
+        
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding-right: 2rem;
+        padding-left: 2rem;  
+    }
+
+    
+}

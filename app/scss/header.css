@@ -1,0 +1,10 @@
+.header nav {
+  padding: 24px;
+}
+.header__hamburger .hamburger {
+  width: 25px;
+  height: 15px;
+}
+.header__links a {
+  font-size: 0.875rem;
+}/*# sourceMappingURL=header.css.map */
