@@ -81,27 +81,46 @@ h1, h2, h3, h6 {
   line-height: 2.775rem;
   color: #2d314d;
 }
+@media (min-width: 40em) {
+  h1, h2, h3, h6 {
+    line-height: 3.8rem;
+  }
+}
 
 h1 {
   font-weight: 300;
-  font-size: 2.75rem;
+  font-size: 1.75rem;
+}
+@media (min-width: 40em) {
+  h1 {
+    font-size: 2.75rem;
+  }
 }
 
 h2 {
   font-weight: 300;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5625rem;
+  line-height: 2.3rem;
 }
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   h2 {
     font-size: 2.25rem;
     margin-bottom: 2.25rem;
+    line-height: 2.775rem;
   }
 }
 
 h3 {
+  font-size: 1rem;
   font-weight: 400;
 }
+@media (min-width: 40em) {
+  h3 {
+    font-size: 1.125rem;
+  }
+}
+
 h4 {
   color: #2d314d;
   font-size: 1rem;
@@ -311,11 +330,19 @@ button:hover::before, .button:hover::before {
   flex-direction: column;
   background-color: #fafafa;
 }
+@media (min-width: 40em) {
+  .hero {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 @media (min-width: 64em) {
   .hero {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 .hero__image {
@@ -389,6 +416,7 @@ button:hover::before, .button:hover::before {
   text-align: center;
   padding-top: 0;
   padding-right: 30px;
+  padding-top: 2.8125rem;
 }
 @media (min-width: 64em) {
   .hero__copy {
@@ -407,7 +435,7 @@ button:hover::before, .button:hover::before {
     font-size: 3.25rem;
   }
 }
-.hero__cta button {
+.hero .button {
   font-size: 0.8rem;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -428,7 +456,6 @@ button:hover::before, .button:hover::before {
   }
 }
 .feature h2 {
-  font-size: 2.2rem;
   padding: 40px;
   font-weight: 400;
   padding-bottom: 0;
